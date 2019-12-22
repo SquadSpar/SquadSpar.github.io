@@ -20,3 +20,4 @@ yarn-error.log*
 # Temp
 client-old
 server-old
+build/
