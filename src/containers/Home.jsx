@@ -31,16 +31,28 @@ class Home extends Component {
         <h1 className="welcome">Welcome to Squad Spur!</h1>
         <p>Pick your role</p>
         <div className="pick-role">
-            <div className="roles">
-                <Link to="/">
-                <img src="../../images/student.png" className="options" alt="student icon" />
-                </Link>
-                <button onClick={this.joinRoom} >STUDENT | Join Room</button>
-                <Link to="/">
-                <img src="../../images/teacher.png" className="options" alt="teacher icon" />
-                </Link>
-                <button onClick={this.createRoom}>TEACHER | Create Room</button>
+          <div className="roles">
+            <div className="role-card">
+              <Link to="/">
+                <img
+                  src="../../images/student.png"
+                  className="options"
+                  alt="student icon"
+                />
+              </Link>
+              <button onClick={this.joinRoom}>Join Room</button>
             </div>
+            <div className="role-card">
+              <Link to="/">
+                <img
+                  src="../../images/teacher.png"
+                  className="options"
+                  alt="teacher icon"
+                />
+              </Link>
+              <button onClick={this.createRoom}>Create Room</button>
+            </div>
+          </div>
         </div>
         {/* <Link to="/">
           <img src="../../images/student.png" alt="student icon" />
