@@ -33,7 +33,7 @@ class Home extends Component {
         <div className="pick-role">
           <div className="roles">
             <div className="role-card">
-              <Link to="/">
+              <Link to="/enter">
                 <img
                   src="../../images/student.png"
                   className="options"

@@ -1,6 +1,7 @@
 import React from "react";
 // import logo from './logo.svg';
 import Home from "./containers/Home";
+import Enter from "./containers/Enter";
 import Room from "./containers/Room";
 
 import "./App.css";
@@ -10,9 +11,8 @@ function App() {
   return (
     <Switch>
       <Route exact path="/" render={props => <Home {...props} />} />
+      <Route exact path="/enter" render={props => <Enter {...props} />} />
       <Route exact path="/room/:number" render={props => <Room {...props} />} />
-
-
     </Switch>
   );
 }

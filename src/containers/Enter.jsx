@@ -1,5 +1,9 @@
 import React, { Component } from "react";
-import {Form} from 'react-bootstrap';
+import { Form } from "react-bootstrap";
+
+// Project Components
+import BackgroundWithOverlay from "../components/BackgroundWithOverlay";
+
 // import '../../stylesheets/Enter.scss'
 
 class Enter extends Component {
@@ -17,13 +21,16 @@ class Enter extends Component {
   };
   render() {
     return (
-      <Form>
-        <h1>Hello </h1>
-        <p>Enter your codewars username:</p>
-        <input type="text" name="userName" onChange={this.myChangeHandler} />
-        <p>Enter room code:</p>
-        <input type="text" name="roomCode" onChange={this.myChangeHandler} />
-      </Form>
+      <>
+        <BackgroundWithOverlay imgUrl="home.png" alpha=".6" />
+        <Form>
+          <h1>Hello </h1>
+          <p>Enter your codewars username:</p>
+          <input type="text" name="userName" onChange={this.myChangeHandler} />
+          <p>Enter room code:</p>
+          <input type="text" name="roomCode" onChange={this.myChangeHandler} />
+        </Form>
+      </>
     );
   }
 }
