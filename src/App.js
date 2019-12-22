@@ -1,15 +1,14 @@
-import React from 'react';
+import React from "react";
 // import logo from './logo.svg';
-import Home from './containers/Home'
-import './App.css';
+import Home from "./containers/Home";
+import "./App.css";
+import { Switch, Route } from "react-router-dom";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <Home/>
-      </header>
-    </div>
+    <Switch>
+      <Route exact path="/" render={props => <Home />} />
+    </Switch>
   );
 }
 
