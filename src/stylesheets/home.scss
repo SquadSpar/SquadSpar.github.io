@@ -1,23 +1,46 @@
-
 .home {
-    // background-image: url("../../public/images/home.png");
-    width: 100vw;
-    height: 768vh;
-    // opacity: 0.20;
+    .home-background {
+        width: 100vw;
+        height: 140vh;
+        background-color: rgba(0, 0, 0, 0.9);
+    }
+    .welcome-page {
+        margin: 0;
+        padding: 0;
+    }
+    .welcome {
+        font-family: inherit;
+        font-size: 48px;
+        font-weight: 500;
+        color: #faa916;
+        position: absolute;
+        top: 20%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    } 
+
+    .pick-role {
+        color: white;
+        font-size: 36px;
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .roles {
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 80%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .options {
+        padding: 40px;
+    }
 }
-.welcome {
-    width: 579px;
-    height: 48px;
-    object-fit: contain;
-    font-family: STHeitiTC;
-    font-size: 48px;
-    font-weight: 500;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: normal;
-    letter-spacing: normal;
-    color: #faa916;
-  }
 
   
 
