@@ -6,7 +6,6 @@ import StyledButton from "../components/StyledButton";
 import BackgroundWithOverlay from "../components/BackgroundWithOverlay";
 
 import "../stylesheets/home.scss";
-// import '../../stylesheets/home.scss'
 import axios from "axios";
 class Home extends Component {
   createRoom = () => {
@@ -32,14 +31,18 @@ class Home extends Component {
         <p>Pick your role</p>
         <div className="pick-role">
             <div className="roles">
-                <Link to="/">
-                <img src="../../images/student.png" className="options" alt="student icon" />
-                </Link>
-                <button onClick={this.joinRoom} >STUDENT | Join Room</button>
-                <Link to="/">
-                <img src="../../images/teacher.png" className="options" alt="teacher icon" />
-                </Link>
-                <button onClick={this.createRoom}>TEACHER | Create Room</button>
+                <div className="role-links">
+                        <Link to="/">
+                        <img src="../../images/student.png" className="options" alt="student icon" />
+                        </Link>
+                        <button onClick={this.joinRoom} >Join Room</button>
+                </div>
+                    <div className="role-links">
+                        <Link to="/">
+                        <img src="../../images/teacher.png" className="options" alt="teacher icon" />
+                        </Link>
+                        <button onClick={this.createRoom}>Create Room</button>
+                </div>
             </div>
         </div>
         {/* <Link to="/">
