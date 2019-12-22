@@ -1,14 +1,18 @@
-import React, { Component } from 'react'
+import React, { Component } from "react";
+
+// Project Components
+import StyledButton from "../Components/StyledButton";
+
 // import '../../stylesheets/home.scss'
 
 class Home extends Component {
   render() {
     return (
       <div className="home">
-        <button>STUDENT</button>
+        <StyledButton title="Student" />
         <button>TEACHER</button>
       </div>
-    )
+    );
   }
 }
 
