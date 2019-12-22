@@ -4,10 +4,7 @@
         height: 140vh;
         background-color: rgba(0, 0, 0, 0.9);
     }
-    .welcome-page {
-        margin: 0;
-        padding: 0;
-    }
+
     .welcome {
         font-family: inherit;
         font-size: 48px;
@@ -19,7 +16,7 @@
         transform: translate(-50%, -50%);
     } 
 
-    .pick-role {
+    p {
         color: white;
         font-size: 36px;
         position: absolute;
@@ -28,11 +25,26 @@
         transform: translate(-50%, -50%);
     }
 
+    button {
+        width: 100px;
+        height: 80px;
+    }
+
+    .pick-roles {
+        color: white;
+        display: flex;
+        flex-direction: row;
+        position: absolute;
+        top: 10%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
     .roles {
         display: flex;
         flex-direction: row;
         position: absolute;
-        top: 80%;
+        top: 90%;
         left: 50%;
         transform: translate(-50%, -50%);
     }
