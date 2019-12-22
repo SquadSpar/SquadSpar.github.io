@@ -3,13 +3,6 @@ import { Switch, Route, Link } from 'react-router-dom'
 // import '../../stylesheets/home.scss'
 
 class Home extends Component {
-    constructor(props) {
-        super(props)
-        this.state = {
-          user: null
-        }
-      }
-    
   render() {
     return (
       <div className="home">
@@ -22,7 +15,7 @@ class Home extends Component {
         <p>Teacher</p>
 
         <Switch>
-          <Route path="/" exact component={(props) => <Home {...props} />} />
+          <Route path="/" exact component={props => <Home />} />
         </Switch>
 
       </div>
