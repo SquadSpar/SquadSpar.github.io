@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import { Form } from "react-bootstrap";
+
+// Styling
 // import '../../stylesheets/Enter.scss'
 
 class Enter extends Component {
