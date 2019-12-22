@@ -5,8 +5,8 @@ class Home extends Component {
   render() {
     return (
       <div className="home">
-        <button>Instructor</button>
-        <button>Student</button>
+        <button>STUDENT</button>
+        <button>TEACHER</button>
       </div>
     )
   }
