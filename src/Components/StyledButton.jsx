@@ -1,9 +1,9 @@
 import React from "react";
 import { Button } from "react-bootstrap";
-export default function StyledButton(title) {
+export default function StyledButton(props) {
   return (
     <>
-      <Button>{title}</Button>
+      <Button onClick={props.onClickFunction}>{props.title}</Button>
     </>
   );
 }
