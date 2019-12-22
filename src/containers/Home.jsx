@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Switch, Route, Link } from 'react-router-dom'
-// import '../../stylesheets/home.scss'
+import { Link } from 'react-router-dom'
+import '../stylesheets/home.scss'
 
 class Home extends Component {
   render() {
@@ -13,11 +13,6 @@ class Home extends Component {
         <p>Student</p>
         <Link to="/"><img src="../../images/teacher.png" alt="teacher icon"/></Link>
         <p>Teacher</p>
-
-        <Switch>
-          <Route path="/" exact component={props => <Home />} />
-        </Switch>
-
       </div>
     )
   }
