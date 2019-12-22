@@ -44,8 +44,10 @@ class Home extends Component {
                         <button onClick={this.createRoom}>Create Room</button>
                 </div>
             </div>
+    
+          </div>
         </div>
-        {/* <Link to="/">
+        /* <Link to="/">
           <img src="../../images/student.png" alt="student icon" />
         </Link>
         <StyledButton
@@ -59,10 +61,11 @@ class Home extends Component {
         <StyledButton
           title="TEACHER | Create Room"
           onClickFunction={this.createRoom}
-        /> */}
-      </div>
+        /> */
+     
     );
   }
 }
+
 
 export default Home;
